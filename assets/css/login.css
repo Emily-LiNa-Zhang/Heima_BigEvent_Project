@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/前后端交互/大事件项目课程资料/self/assets/images/login_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    /* 居中 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tittle-box {
+    height: 60px;
+    /* 平铺和居中 */
+    background: url('/前后端交互/大事件项目课程资料/self/assets/images/login_title.png') no-repeat center;
+}
+
+/* 注册的盒子默认情况下是隐藏的 */
+.reg-box {
+    display: none;
+}
+
+/* 将表单往中间挤一下 */
+.layui-form {
+    /* 注意中间是空格不是逗号 */
+    padding: 0 30px;
+}
+
+.link {
+    /* flex布局 */
+    display: flex;
+    /* 文字在后面显示 */
+    justify-content: end;
+}
+
+/* 设置字体大小 */
+.link a {
+    font-size: 12px;
+}
+
+/* 子绝父相 */
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+/* 文本框里的默认文字设定左边距 */
+.layui-input {
+    padding-left: 32px;
+}
