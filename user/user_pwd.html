@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 导入layui的样式(先导入第三方的样式，再导入自己的样式，因为自己的样式可能会覆盖第三方的样式) -->
+    <link rel="stylesheet" href="/前后端交互/大事件项目课程资料/self/assets/lib/layui/css/layui.css">
+    <!-- 导入自己的样式css文件 -->
+    <link rel='stylesheet' href='/前后端交互/大事件项目课程资料/self/assets/css/user/user_pwd.css' />
+</head>
+
+<body>
+    <!-- 卡片区域 -->
+    <div class="layui-card">
+        <div class="layui-card-header">修改密码</div>
+        <div class="layui-card-body">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">原密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="oldPwd" required lay-verify="required|pwd" placeholder="请输入原密码"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">新密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="newPwd" required lay-verify="required|pwd|samePwd"
+                            placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">确认新密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="rePwd" required lay-verify="required|pwd|rePwd"
+                            placeholder="请再次确认密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 导入layui的js -->
+    <script src="/前后端交互/大事件项目课程资料/self/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jQuery -->
+    <script src="/前后端交互/大事件项目课程资料/self/assets/lib/jquery.js"></script>
+    <!-- 导入自己封装的baseAPI -->
+    <script src="/前后端交互/大事件项目课程资料/self/assets/js/baseAPI.js"></script>
+    <!-- 导入自己的js脚本(调用完第三方再调用自己的) -->
+    <script src="/前后端交互/大事件项目课程资料/self/assets/js/user/user_pwd.js"></script>
+
+
+</body>
+
+</html>
