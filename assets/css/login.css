@@ -12,6 +12,7 @@ body {
     width: 400px;
     height: 310px;
     background-color: #fff;
+    /* 绝对定位 */
     position: absolute;
     /* 居中 */
     left: 50%;
@@ -40,7 +41,7 @@ body {
     /* flex布局 */
     display: flex;
     /* 文字在后面显示 */
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 /* 设置字体大小 */
@@ -49,15 +50,16 @@ body {
 }
 
 /* 子绝父相 */
+.layui-form-item {
+    position: relative;
+}
+
 .layui-icon {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.layui-form-item {
-    position: relative;
-}
 
 /* 文本框里的默认文字设定左边距 */
 .layui-input {
