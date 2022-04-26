@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+
+.layui-form {
+    width: 500px;
+}
+
+/* 标题区域左右布局 */
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。 */
+    align-items: center;
+}
+
+/* 给弹出框的表格安排一下位置 */
+#form-add,
+#form-edit {
+    padding-top: 20px;
+    padding-right: 30px;
+}
